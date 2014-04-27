@@ -14,19 +14,6 @@ void thickLine::draw()
     
     ofLog(OF_LOG_VERBOSE, "draw poly %i", thickness.size());
     
-    /*
-    if(!this->getVertices().empty()) {
-		// use smoothness, if requested:
-		//if (bSmoothHinted) startSmoothing();
-        
-		glEnableClientState(GL_VERTEX_ARRAY);
-		glVertexPointer(3, GL_FLOAT, sizeof(ofVec3f), &this->getVertices()[0].x);
-		glDrawArrays(this->isClosed()?GL_LINE_LOOP:GL_LINE_STRIP, 0, this->size());
-        
-		// use smoothness, if requested:
-		//if (bSmoothHinted) endSmoothing();
-	}
-     */
     if (this->size() < 2) {
         return;
     }

@@ -7,6 +7,11 @@
 #include "thickLine.h"
 
 
+/* To make the TouchEventArgs.pressure parameter available - follow these steps:
+ http://forum.openframeworks.cc/t/finger-area-to-oftoucheventargs-pressure/7761
+ */
+
+
 class testApp : public ofxiOSApp
 {
 	
