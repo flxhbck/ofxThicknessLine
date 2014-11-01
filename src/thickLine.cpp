@@ -27,7 +27,7 @@ void thickLine::draw()
     }
      */
      
-    
+    ofPushStyle();
     
     ofSetPolyMode(OF_POLY_WINDING_NONZERO);
     ofBeginShape();
@@ -53,6 +53,8 @@ void thickLine::draw()
     
     
     ofEndShape();
+    
+    ofPopStyle();
     
     
     
